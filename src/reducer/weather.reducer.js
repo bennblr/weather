@@ -78,7 +78,7 @@ const reduces = handleActions(
         }),
         [GET_CITY_LIST_FROM_LS]: state => ({
             ...state,
-            cityList: JSON.parse(localStorage.getItem('cityList'))
+            cityList: JSON.parse(localStorage.getItem('cityList')) || []
         }),
         [UPDATE_LS_CITY_LIST]: (state, {payload}) => ({
             ...state,
