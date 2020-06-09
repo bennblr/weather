@@ -3,7 +3,7 @@ import {Router, Switch, Route} from 'react-router-dom';
 import routes from './routes';
 import appHistory from './history';
 import {ThemeProvider} from '@material-ui/core/styles';
-import {blindTheme, theme} from '../App.styles';
+import {blindTheme, theme} from '../theme';
 import Header from '../components/Header/Header';
 
 const AppRouter = () => {
